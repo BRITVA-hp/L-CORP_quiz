@@ -62,7 +62,7 @@
         </section>
     </main>
 
-    <div class="modal modal--active modal-main">
+    <div class="modal modal-main">
         <div class="modal__container">
             <form action="#" class="modal-main__dialog modal__dialog">
                 <picture class="modal__close modal-main__close">
@@ -79,7 +79,50 @@
                     </div>
                 </div>
 
-                <button class="button modal-main__button">Получить консцльтацию</button>
+                <button class="button modal-main__button">Получить консультацию</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal--active modal-quiz">
+        <div class="modal__container">
+            <form action="#" class="modal-quiz__dialog modal__dialog">
+                <picture class="modal__close modal-quiz__close">
+                    <source media="(max-width: 991px)" srcset="img/closeM.png">
+                    <img src="img/close.png" alt="close">
+                </picture>
+                <h3 class="modal-quiz__title">Какие лиды Вам нужны?</h3>
+                <div class="modal-quiz__dropdown">
+                    <div class="modal-quiz__dropdown__trigger">
+                        <input disabled class="modal-quiz__input input" type="text" placeholder="Выберите тип">
+                        <img class="modal-quiz__arrow" src="img/modal/modal-quiz/arrow.png" alt="arrow">
+                    </div>
+                    <div class="modal-quiz__dropdown__menu">
+                        <ul class="modal-quiz__dropdown__ul">
+                            <li class="modal-quiz__dropdown__li">Дезинфекция</li>
+                            <li class="modal-quiz__dropdown__li">Юриспруденция</li>
+                            <li class="modal-quiz__dropdown__li">Банкротство физ. лиц</li>
+                            <li class="modal-quiz__dropdown__li">Кредиты / займы</li>
+                            <li class="modal-quiz__dropdown__li">Ремонт ПК / Бытовой техники</li>
+                            <li class="modal-quiz__dropdown__li">Клининг</li>
+                            <li class="modal-quiz__dropdown__li">Спорт</li>
+                            <li class="modal-quiz__dropdown__li">Ремонт квартир, строительство</li>
+                            <li class="modal-quiz__dropdown__li">Финансы, бизнес, бухгалтерия</li>
+                            <li class="modal-quiz__dropdown__li">Остекление</li>
+                            <li class="modal-quiz__dropdown__li">Недвижимость</li>
+                            <li class="modal-quiz__dropdown__li">Другое</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modal-quiz__button-group">
+                    <button class="button button--back modal-quiz__button">Назад</button>
+                    <button class="button button--next modal-quiz__button">Далее</button>
+                </div>
+
+                <div class="modal__progress">
+                    <div class="modal__progress__inner"></div>
+                </div>
             </form>
         </div>
     </div>
