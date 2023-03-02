@@ -13,6 +13,22 @@
       &__text
         font-size: 18px
 
+@media screen and ( max-width: 1500px )
+  .modal
+    &__close
+      top: 30px
+      right: 40px
+    &__dialog
+      width: 903px
+      height: 512px
+      background: url(../img/modal/bgC.png) no-repeat center
+    &-main
+      &__dialog
+        padding-top: 120px
+      &__title
+        font-size: 60px
+
+
 @media screen and ( max-width: 1200px )
   .main
     background: url(../img/main/bgC.png) no-repeat right center
@@ -21,6 +37,33 @@
       max-width: 600px
 
 @media screen and ( max-width: 991px )
+  .input
+    font-size: 14px
+    padding: 18px 25px
+
+  .modal
+    &__close
+      top: 15px
+      right: 25px
+    &-main
+      &__button
+        width: 100%
+        height: 50px
+        font-size: 18px
+        background: url(../img/modal/modal-main/btnM.png) no-repeat center/100% 100%
+      &__box
+        flex-direction: column
+        row-gap: 10px
+        margin-bottom: 20px
+      &__title
+        color: #08E2F0
+        font-size: 40px
+      &__dialog
+        width: 357px
+        height: 462px
+        padding: 75px 10px 0
+        background: url(../img/modal/modal-main/bgM.png) no-repeat center
+
   .main
     padding-top: 25px
     padding-bottom: 25px
