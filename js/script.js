@@ -23,4 +23,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     dropdown('modal-quiz__dropdown--active')
 
+    function loading(elemsSelector, elActiveClass) {
+        const elems = document.querySelectorAll(elemsSelector)
+
+        elems.forEach((el, elIndex) => {
+            setTimeout(() => {
+                el.classList.add(elActiveClass)
+            }, (elIndex + 1) * 2000)
+        })
+    }
+
+    loading('.loading__progress__elem', 'loading__progress__elem--active')
+
 })
