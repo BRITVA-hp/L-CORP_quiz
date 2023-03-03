@@ -87,7 +87,7 @@
             position: relative
             &--active
                 .modal-quiz__arrow
-                    transform: rotate(180deg)
+                    transform: translateY(-50%) rotate(180deg)
                 .modal-quiz__dropdown__menu
                     opacity: 1
                     visibility: visible
@@ -140,8 +140,9 @@
         &__arrow
             position: absolute
             right: 15px
-            top: 20px
+            top: 50%
             transition: 0.3s
+            transform: translateY(-50%)
         &__button-group
             display: flex
             justify-content: center
