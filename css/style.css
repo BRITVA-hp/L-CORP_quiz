@@ -1209,6 +1209,9 @@ body {
     -moz-column-gap: 10px;
     column-gap: 10px;
   }
+  .main__card__img {
+    width: 66px;
+  }
   .main__card__text {
     font-size: 14px;
     text-align: left;
@@ -1217,6 +1220,9 @@ body {
     padding-top: 3px;
     padding-bottom: 3px;
     padding-right: 8px;
+  }
+  .header__logo {
+    width: 173px;
   }
   .header__button {
     display: none;
