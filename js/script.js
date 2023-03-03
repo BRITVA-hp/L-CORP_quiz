@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const items = dropdown.querySelectorAll('[data-dropdown-item]')
         const input = dropdown.querySelector('[data-dropdown-input]')
 
-        dropdownTrigger.addEventListener('click', () => {
+        dropdownTrigger.addEventListener('click', (e) => {
+            e.preventDefault()
+            e.stopPropagation()
+            e.stopImmediatePropagation()
             dropdown.classList.toggle(dropdownMenuActiveClass)
         })
 

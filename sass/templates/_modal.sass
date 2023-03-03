@@ -106,6 +106,14 @@
                 clip-path: polygon(0 0, 139px 0, 143px 7px, calc(100% - 56px) 7px, calc(100% - 19px) 29px, 100% 29px, 100% 100%, 41px 100%, 0 calc(100% - 22px))
             &__trigger
                 cursor: pointer
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    left: 0
+                    right: 0
+                    top: 0
+                    bottom: 0
             &__ul
                 list-style-type: none
                 padding: 20px 0 40px
