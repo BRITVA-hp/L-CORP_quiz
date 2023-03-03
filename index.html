@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div class="modal modal--active modal-quiz">
+    <div class="modal modal-quiz">
         <div class="modal__container">
             <form action="#" class="modal-quiz__dialog modal__dialog">
                 <picture class="modal__close modal-quiz__close">
@@ -122,6 +122,36 @@
                 <div class="modal-quiz__button-group">
                     <button class="button button--back modal-quiz__button">Назад</button>
                     <button class="button button--next modal-quiz__button">Далее</button>
+                </div>
+
+                <div class="modal__progress">
+                    <div class="modal__progress__inner"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal modal--active modal-last">
+        <div class="modal__container">
+            <form action="#" class="modal-last__dialog modal__dialog">
+                <picture class="modal__close modal-last__close">
+                    <source media="(max-width: 991px)" srcset="img/closeM.png">
+                    <img src="img/close.png" alt="close">
+                </picture>
+                <h3 class="modal-last__title">Оставьте свои контактные данные, и мы пришлем <br> Вам расчет стоимости заявки</h3>
+
+                <div class="modal-last__box">
+                    <div class="modal-last__input-group">
+                        <input class="modal-last__input input" type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal-last__input-group">
+                        <input class="modal-last__input input" type="tel" placeholder="+7 (___) ___ - __ - __">
+                    </div>
+                </div>
+
+                <div class="modal-last__button-group">
+                    <button class="button button--back modal-last__button">Назад</button>
+                    <button class="button button--next modal-last__button">Далее</button>
                 </div>
 
                 <div class="modal__progress">
