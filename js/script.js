@@ -1,37 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    function dropdowns(dropdownMenuActiveClass) {
-        const dropdowns = document.querySelectorAll('[data-dropdown]')
+    function dropdown(dropdownMenuActiveClass) {
+        const dropdown = document.querySelector('[data-dropdown]')
+        const dropdownTrigger = dropdown.querySelector('[data-dropdown-trigger]')
+        const items = dropdown.querySelectorAll('[data-dropdown-item]')
+        const input = dropdown.querySelector('[data-dropdown-input]')
 
-        dropdowns.forEach(dropdown => {
-            dropdown.addEventListener('click', (e) => {
-                e.stopImmediatePropagation()
-                if (!e.target.matches('[data-dropdown-menu]') && !e.target.closest('[data-dropdown-menu]')) dropdown.classList.toggle(dropdownMenuActiveClass)
-            })
+        dropdownTrigger.addEventListener('click', () => {
+            dropdown.classList.toggle(dropdownMenuActiveClass)
         })
 
-        window.addEventListener('click', (e) => {
-            dropdowns.forEach(dropdown => {
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                input.value = item.textContent
                 dropdown.classList.remove(dropdownMenuActiveClass)
             })
         })
+
     }
-    dropdowns('modal-quiz__dropdown--active')
-
-
-// Close the dropdown menu if the user clicks outside of it
-//     window.onclick = function(event) {
-//         if (!event.target.matches('.dropbtn')) {
-//
-//             var dropdowns = document.getElementsByClassName("dropdown-content");
-//             var i;
-//             for (i = 0; i < dropdowns.length; i++) {
-//                 var openDropdown = dropdowns[i];
-//                 if (openDropdown.classList.contains('show')) {
-//                     openDropdown.classList.remove('show');
-//                 }
-//             }
-//         }
-//     }
+    dropdown('modal-quiz__dropdown--active')
 
 })
