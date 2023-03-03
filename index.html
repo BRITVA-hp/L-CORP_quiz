@@ -92,13 +92,17 @@
                     <img src="img/close.png" alt="close">
                 </picture>
                 <h3 class="modal-quiz__title">Какие лиды Вам нужны?</h3>
-                <div class="modal-quiz__dropdown">
-                    <div class="modal-quiz__dropdown__trigger">
+                <div class="modal-quiz__dropdown" data-dropdown>
+                    <div class="modal-quiz__dropdown__trigger" data-dropdown-trigger>
                         <input disabled class="modal-quiz__input input" type="text" placeholder="Выберите тип">
-                        <img class="modal-quiz__arrow" src="img/modal/modal-quiz/arrow.png" alt="arrow">
+                        <picture class="modal-quiz__arrow">
+                            <source media="(max-width: 1500px)" srcset="img/modal/modal-quiz/arrowM.png">
+                            <img src="img/modal/modal-quiz/arrow.png" alt="arrow">
+                        </picture>
                     </div>
-                    <div class="modal-quiz__dropdown__menu">
+                    <div class="modal-quiz__dropdown__menu" data-dropdown-menu>
                         <ul class="modal-quiz__dropdown__ul">
+                            <li class="modal-quiz__dropdown__li">Миграционные услуги</li>
                             <li class="modal-quiz__dropdown__li">Дезинфекция</li>
                             <li class="modal-quiz__dropdown__li">Юриспруденция</li>
                             <li class="modal-quiz__dropdown__li">Банкротство физ. лиц</li>
