@@ -1238,6 +1238,12 @@ body {
   .thanks {
     height: calc(100vh - 75px);
   }
+  .thanks__img {
+    display: none;
+  }
+  .thanks__img--mob {
+    display: block;
+  }
   .thanks__title {
     font-size: 40px;
     margin-bottom: 15px;
@@ -1387,14 +1393,6 @@ body {
     display: none;
   }
   .header__phone {
-    display: block;
-  }
-}
-@media screen and (max-width: 575px) {
-  .thanks__img {
-    display: none;
-  }
-  .thanks__img--mob {
     display: block;
   }
 }
